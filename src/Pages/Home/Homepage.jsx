@@ -1,10 +1,13 @@
 import React from "react";
-import styles from "./Homepage.module.css";
+import { Header, Banner } from "../../Exports/exports";
+// import styles from "./Homepage.module.css";
 
 const Homepage = () => {
   return (
-    <div className={styles.homepage}>
-    </div>
+    <>
+      <Header />
+      <Banner />
+    </>
   );
 };
 

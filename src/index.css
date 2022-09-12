@@ -2,16 +2,92 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  user-select: none;
+  /* background-color: var(--neutral-100); */
 }
 
-body {
-  font-family:  "Roboto", "Oxygen", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+:root {
+
+  /************************ Colors ***************************/
+
+  /* Primary Colors */
+  --primary-blue: #3434FF;
+  --primary-blue-light: #4343fe;
+  --primary-dark-tiles: #0B0B2C;
+  --primary-paragraphs: #69697B;
+
+
+  /* Secondary Colors */
+  --secondary-200: #F5F7FF;
+  --secondary-500: #2C23D2;
+
+
+  /* Neutral Colors */
+  --neutral-500: #4E4E65;
+  --neutral-400: #CFCFDB;
+  --neutral-300: #ECECF4;
+  --neutral-200: #FAFAFA;
+  --neutral-100: #F7F7FB;
+
+
+  /* Icon Colors */
+  --icons-borders: #202058;
+
+
+  /************************* Fonts *************************/
+  --xx-large: 98px;
+  --extra-large: 92px;
+  --large: 74px;
+  --heading-h1: 60px;
+  --heading-h2: 40px;
+  --heading-h3: 25px;
+  --heading-h4: 23px;
+  --heading-h5: 18px;
+  --heading-h6: 16px;
+
+
+  /************************* Paragraphs *************************/
+  --paragraph-default: 18px;
+  --paragraph-medium: 20px;
+  --paragraph-large: 24px;
+  --paragraph-small: 16px;
+
+
+  /************************* Blockquotes *************************/
+  --blockquote-radius: 10px;
+
+
+  /************************* Links *************************/
+  --link: 16px;
+  --link-hover: var(--primary-blue);
+  --link-color: var(var(--primary-dark-tiles));
+
+
+  /************************* Buttons *************************/
+  --button-small: 10px 15px;
+  --button-medium: 15px 25px;
+  --button-large: 20px 30px;
+  --button-primary-outline: none;
+  --button-secondary-outline: none;
+  --button-border: 0;
+  --button-secondary-border: 1px solid var(--primary-blue);
+
+
+  /************************* Animations *************************/
+  --smooth-trans: all 0.25s linear;
+
+
+  /************************* Screen Sizes *************************/
+  --extra-large-screens: @media (min-width: 1440px)
+  --large-screens: @media (max-width: 1024px)
+  --tablet-screens: @media (max-width: 768px)
+  --mobile-screens: @media (max-width: 600px)
+
+
+  /* *********************** Shadows ************************** */
+  --shadow-200: 1px 1px 15px rgba(41, 41, 41, 0.2);
+  --shadow-300: 1px 1px 15px rgba(30, 30, 30, 0.101);
 }
