@@ -26,7 +26,7 @@ const Header = () => {
       </nav>
 
       <div className={styles.join}>
-        <Link to='/join'>Join us</Link>
+        <Link to='/join-us'>Join us</Link>
       </div>
     </header>
   );
