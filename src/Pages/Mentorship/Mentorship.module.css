@@ -1,0 +1,330 @@
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mentorship {
+  height: 100vh;
+}
+
+.pricing_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(245, 245, 245, 0.64);
+  position: relative;
+  gap: 50px;
+}
+
+.text,
+.comparison_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text h2 {
+  font-size: var(--large);
+}
+
+.text p {
+  font-size: var(--heading-h4);
+  width: 750px;
+  text-align: center;
+  line-height: 1.5;
+  color: rgba(50, 49, 49, 0.783);
+}
+
+.star {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+
+.mentorship_selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(128, 128, 128, 0.553);
+  padding: 8px;
+  border-radius: 35px;
+  box-shadow: 2px 5px 15px rgba(196, 196, 196, 0.253);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.buttons button {
+  padding: 13px 20px;
+  border-radius: 35px;
+  font-size: 16px;
+  border: 1px solid rgba(76, 76, 76, 0.509);
+  cursor: pointer;
+}
+
+.buttons button:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+
+.discount {
+  position: absolute;
+  width: 200px;
+  top: 30%;
+  left: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+}
+
+.star_arrow {
+  top: 105%;
+  left: -9%;
+  position: absolute;
+}
+
+.arrow p {
+  font-weight: 550;
+  width: 100%;
+}
+
+/* MENTORSHIP CARDS LISTS */
+.mentorship_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 50px;
+}
+
+.mentorship_card__hd {
+  width: 100%;
+  text-align: center;
+}
+
+.mentorship_card__hd h3 {
+  font-size: var(--heading-h1);
+}
+
+.card_lists {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+
+.mentorship_card {
+  border: 1px solid rgba(205, 205, 205, 0.33);
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 30px 30px 50px 30px;
+  /* padding-top: 30px; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  /* gap: 15px; */
+  transition: transform 0.25s linear;
+}
+
+.mentorship_card:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 2px 15px rgba(173, 173, 173, 0.259);
+}
+
+.card_img {
+  height: 100px;
+  width: 100px;
+  margin: 15px 0;
+}
+
+.card_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card_title {
+  font-size: var(--heading-h4);
+  margin-bottom: 5px;
+}
+
+.card_price {
+  font-size: var(--heading-h2);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card_txt {
+  font-size: var(--paragraph-default);
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.hr {
+  border: 0.5px solid rgba(189, 188, 188, 0.215);
+  /* background-color: black; */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card_list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card_list ul {
+  width: 100%;
+  line-height: 2;
+}
+
+.card_list ul li {
+  font-size: var(--paragraph-default);
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.card_link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_link a {
+  font-size: var(--paragraph-medium);
+  color: black;
+  padding: 20px 0;
+  border-radius: 45px;
+  border: 1px solid rgba(209, 209, 209, 0.367);
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  transition: all 0.25s linear;
+  color: rgba(51, 51, 51, 0.82);
+}
+
+.card_link a:hover {
+  box-shadow: 1px 2px 15px rgba(189, 188, 188, 0.215);
+}
+
+.selected {
+  background-color: var(--primary-blue);
+  color: white;
+  border: 1px solid var(--primary-blue);
+}
+
+.selected .card_link a {
+  color: white;
+  border: 1px solid rgba(245, 245, 245, 0.465);
+}
+
+.selected .card_link a:hover {
+  border: 1px solid rgba(245, 245, 245, 0.301);
+  box-shadow: 1px 2px 15px rgba(2, 28, 74, 0.215);
+}
+
+/* Comparison */
+/* .comparisons {
+  width: 100%;
+  padding: 95px 80px;
+}
+
+.comparison_text {
+  margin-bottom: 60px;
+}
+
+.comparison_text h2 {
+  font-size: var(--heading-h1);
+}
+
+.comparison_text p {
+  font-size: var(--paragraph-default);
+  width: 700px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.comparison_table {
+  width: 100%;
+  border: 2px solid rgb(58, 56, 56);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.comparison_table__hd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+  background-color: rgba(191, 191, 191, 0.553);
+  border-radius: 5px;
+}
+
+.comparison_table__hd > div {
+  padding: 35px 25px;
+}
+
+.comparison_lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(181, 176, 176, 0.587);
+}
+
+.hd {
+  display: flex;
+  width: 30%;
+}
+
+.comparison_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+  border-radius: 5px;
+}
+
+.comparison_row > div {
+  padding: 20px 25px;
+}
+
+.comparison_row > div .invisible {
+  visibility: hidden;
+} */

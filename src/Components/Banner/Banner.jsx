@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 // SVG as Components
 import { ReactComponent as Star } from "../../assets/svg/arrow-starup.svg";
 
-import { useAutoAnimate } from '@formkit/auto-animate/react'
+// import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 const Banner = () => {
-  const [banner] = useAutoAnimate();
 
   return (
-    <div className={styles.banner} ref={banner}>
+    <div className={styles.banner}>
       <h2>
         Launch your Dev Career with <span>Project-Based Coaching.</span>
       </h2>
