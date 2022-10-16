@@ -8,8 +8,8 @@ import ArrowStartup from "../../assets/svg/SVG/ArrowStartup";
 import Img1 from "../../assets/png&jpg/pricing-starup-template1.png";
 import Img2 from "../../assets/png&jpg/pricing-starup-template2.png";
 import { Link } from "react-router-dom";
-import CheckIcon from "../../assets/svg/check.svg";
-import CheckIcon2 from "../../assets/svg/check2.svg";
+// import CheckIcon from "../../assets/svg/check.svg";
+// import CheckIcon2 from "../../assets/svg/check2.svg";
 
 const plans = [
   {
@@ -19,7 +19,7 @@ const plans = [
     price: "Ghc 150",
     txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor",
     isSelected: false,
-    route: "/beginner",
+    route: "/mentorship/beginner",
     lists: [
       "This is a test runner app...",
       "This is a test runner app...",
@@ -36,7 +36,7 @@ const plans = [
     price: "Ghc 250",
     txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor",
     isSelected: true,
-    route: "/intermediate",
+    route: "/mentorship/beginner",
     lists: [
       "This is a test runner app...",
       "This is a test runner app...",
@@ -53,7 +53,7 @@ const plans = [
     price: "Ghc 350",
     txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor",
     isSelected: false,
-    route: "/advanced",
+    route: "/mentorship/beginner",
     lists: [
       "This is a test runner app...",
       "This is a test runner app...",
@@ -115,49 +115,6 @@ const Mentorship = () => {
             ))}
           </div>
         </div>
-
-        {/* Comparisons */}
-        {/* <div className={styles.comparisons}>
-          <div className={styles.comparison_text}>
-            <h2>Feature Comparison</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore consectur draging
-            </p>
-          </div>
-          <div className={styles.comparison_table}>
-            <div className={styles.comparison_table__hd}>
-              <div className={styles.hd}>
-                <h2>Features</h2>
-              </div>
-              <div>
-                <h2>Beginner</h2>
-              </div>
-              <div>
-                <h2>Intermediate</h2>
-              </div>
-              <div>
-                <h2>Advanced</h2>
-              </div>
-            </div>
-            <div className={styles.comparison_lists}>
-              <div className={styles.comparison_row}>
-                <div className={styles.hd}>
-                  <h2>Code Reviews</h2>
-                </div>
-                <div className={styles.starter}>
-                  <h2 className={styles.invisible}>Beginner</h2>
-                </div>
-                <div className={styles.intermediate}>
-                  <img src={CheckIcon2} alt="" />
-                </div>
-                <div className={styles.advanced}>
-                  <img src={CheckIcon2} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </>
   );

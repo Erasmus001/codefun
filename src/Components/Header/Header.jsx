@@ -20,7 +20,8 @@ const Header = () => {
       <nav className={styles.nav}>
         <NavLink to='/courses' activestyle={activestyle}>Courses</NavLink>
         <NavLink to='/projects' activestyle={activestyle}>Projects</NavLink>
-        <NavLink to='/mentorship' activestyle={activestyle}>Mentorship</NavLink>
+        {/* <NavLink to='/mentorship' activestyle={activestyle}>Mentorship</NavLink> */}
+        <NavLink to='/resources' activestyle={activestyle}>Rescources</NavLink>
         <NavLink to='/contact' activestyle={activestyle}>Contact</NavLink>
         <NavLink to='/about' activestyle={activestyle}>About</NavLink>
       </nav>
