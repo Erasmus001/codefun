@@ -1,10 +1,16 @@
 import "./App.css";
 import AppRoutes from "./AppRoutes";
+// import { QueryClient, QueryClientProvider } from "react-query";
+// import { ReactQueryDevtools } from 'react-query/devtools'
 
 function App() {
+  // const queryClient = new QueryClient();
   return (
     <div className="app">
-      <AppRoutes />
+      {/* <QueryClientProvider client={queryClient}> */}
+        <AppRoutes />
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
+      {/* </QueryClientProvider> */}
     </div>
   );
 }

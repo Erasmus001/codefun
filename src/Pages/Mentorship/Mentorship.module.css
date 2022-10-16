@@ -172,14 +172,21 @@
 }
 
 .card_title {
-  font-size: var(--heading-h4);
-  margin-bottom: 5px;
+  font-size: var(--heading-h5);
+  margin-bottom: 10px;
 }
 
 .card_price {
   font-size: var(--heading-h2);
   font-weight: 600;
   margin-bottom: 8px;
+}
+
+.card_price p small {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: rgb(45, 45, 45);
+  font-weight: 500;
 }
 
 .card_txt {
@@ -253,6 +260,10 @@
 .selected .card_link a:hover {
   border: 1px solid rgba(245, 245, 245, 0.301);
   box-shadow: 1px 2px 15px rgba(2, 28, 74, 0.215);
+}
+
+.selected .card_price p small {
+  color: white;
 }
 
 /* Comparison */

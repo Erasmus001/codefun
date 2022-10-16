@@ -138,13 +138,13 @@ const Signup = () => {
               name="agree"
               id="agree"
               value={ischecked}
-              checked={ischecked}
+              checked={ischecked ? true : false}
               onChange={(e) => setIsChecked(e.target.value)}
             />
             <label htmlFor="agree">
               <p>
                 Agree to all terms and conditions in
-                <Link to="/terms"> Terms of Use</Link>
+                <Link to="/terms">Terms of Use</Link>
               </p>
             </label>
           </div>
@@ -161,11 +161,6 @@ const Signup = () => {
             </button>
           </div>
         </form>
-
-        {/* Socials */}
-        {/* <div className={styles.social_auth}>
-          <h3>Social Auth</h3>
-        </div> */}
       </div>
     </div>
   );

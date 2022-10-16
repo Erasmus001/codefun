@@ -26,6 +26,7 @@ const plans = [
       "This is a test runner app...",
       "This is a test runner app...",
       "This is a test runner app...",
+      "This is a test runner app..."
     ],
   },
   {
@@ -178,7 +179,7 @@ const MentorshipCard = ({ data }) => {
         <h3>{data.title}</h3>
       </div>
       <div className={styles.card_price}>
-        <p>{data.price}</p>
+        <p>{data.price} <small>/ Mon</small></p>
       </div>
       <div className={styles.card_txt}>
         <p>{data.txt}</p>
