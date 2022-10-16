@@ -5,7 +5,7 @@ import Signup from "./Pages/Auth/Signup/Signup";
 import ContactUs from "./Pages/Contact/ContactUs";
 import Courses from "./Pages/Courses/Courses";
 import Homepage from "./Pages/Home/Homepage";
-// import Mentorship from "./Pages/Mentorship/Mentorship";
+// import Mentorship from "./Pages/Mentorship/Mentorship"; 
 // import Beginner from "./Pages/Mentorship/SingleMentorship/Beginner";
 
 const AppRoutes = () => {
