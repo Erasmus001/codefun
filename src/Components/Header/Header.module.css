@@ -10,6 +10,7 @@
   top: 0;
   left: 0;
   z-index: 9;
+  box-shadow: 1px 2px 15px rgba(172, 172, 172, 0.133);
 }
 
 .brand {
@@ -50,7 +51,7 @@
   color: var(--link-hover);
 }
 
-.join a{
+.join a {
   padding: var(--button-medium);
   background-color: var(--primary-blue);
   border-radius: 5px;
@@ -61,10 +62,6 @@
 .join a:hover {
   transform: scale(1.1);
 }
-
-
-
-
 
 /* MOBILE SCREENS */
 @media (max-width: 600px) {

@@ -5,8 +5,7 @@ import Signup from "./Pages/Auth/Signup/Signup";
 import ContactUs from "./Pages/Contact/ContactUs";
 import Courses from "./Pages/Courses/Courses";
 import Homepage from "./Pages/Home/Homepage";
-// import Mentorship from "./Pages/Mentorship/Mentorship"; 
-// import Beginner from "./Pages/Mentorship/SingleMentorship/Beginner";
+import Course from "./Pages/Course/Course";
 
 const AppRoutes = () => {
   return (
@@ -16,8 +15,7 @@ const AppRoutes = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
-          {/* <Route path="/mentorship" element={<Mentorship />} /> */}
-          {/* <Route path="/mentorship/beginner" element={<Beginner />} /> */}
+          <Route path="/courses/:courseId" element={<Course />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/join-us" element={<Signup />} />
         </Routes>

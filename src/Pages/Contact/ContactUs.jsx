@@ -34,6 +34,7 @@ const ContactUs = () => {
       <div className={styles.contact_us}>
         <div className={styles.contact_banner}>
           <h3>Contact Us</h3>
+          <p>Let's get to know what you would want on this platform.</p>
         </div>
 
         <div className={styles.contact_form}>

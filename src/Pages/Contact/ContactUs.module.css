@@ -4,23 +4,31 @@
 }
 
 .contact_banner {
-  background-color: var(--primary-blue);
+  background-color: whitesmoke;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact_banner h3 {
   font-size: var(--extra-large);
-  color: white;
+  color: black;
+}
+
+.contact_banner p {
+  font-size: var(--heading-h4);
+  color: rgb(56, 56, 56);
 }
 
 .contact_form {
   width: 100%;
   padding: 100px 170px;
-  background-color: rgba(240, 240, 240, 0.494);
+  /* background-color: rgba(240, 240, 240, 0.494); */
+  background-color: rgba(236, 236, 236, 0.561);
   display: flex;
   align-items: center;
   justify-content: center;
