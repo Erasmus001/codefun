@@ -25,9 +25,9 @@ const Courses = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quo
             magni, qui vel laborum ducimus.
           </p>
-          <Link to="" className={styles.get_started}>
+          {/* <Link to="" className={styles.get_started}>
             Get Started
-          </Link>
+          </Link> */}
         </section>
 
         {/* Catalogue of courses */}

@@ -6,6 +6,7 @@ import ContactUs from "./Pages/Contact/ContactUs";
 import Courses from "./Pages/Courses/Courses";
 import Homepage from "./Pages/Home/Homepage";
 import Course from "./Pages/Course/Course";
+import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
           <Route path="/courses/:courseId" element={<Course />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/join-us" element={<Signup />} />
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
