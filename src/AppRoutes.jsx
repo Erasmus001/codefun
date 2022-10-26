@@ -18,6 +18,7 @@ const AppRoutes = () => {
           <Route path="/courses" element={<Courses />} />
           <Route path="/courses/:courseId" element={<Course />} />
           <Route path="/contact" element={<ContactUs />} />
+          {/* <Route path="/contact" element={<Mentors />} /> */}
           <Route path="/join-us" element={<Signup />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>

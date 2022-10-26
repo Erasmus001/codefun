@@ -1,0 +1,21 @@
+.why_us {
+  width: 100%;
+  padding: 80px 50px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why_us h3 {
+  font-size: var(--heading-h2);
+  color: var(--primary-dark-tiles);
+}
+
+.why_us p {
+  font-size: var(--paragraph-medium);
+  width: 900px;
+  text-align: center;
+  line-height: 1.5;
+}

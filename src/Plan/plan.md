@@ -27,7 +27,6 @@
 
 <br>
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>
@@ -58,8 +57,8 @@
 <br>
 <br>
 
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
@@ -67,10 +66,11 @@
 There are many great online coding platforms available on the internet; however, I didn't find one that really suited my needs so I decided build this enhanced one. I want to create an online coding plaform so amazing that it'll be the last one you ever need -- I think this is it.
 
 Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others.
-* You shouldn't be paying for huge sum of money for a theory based course.
-* You shouldn't be building simple ToDo applications that doesnt enhance your learning.
-* You should implement DRY principles to the rest of your life 😀😀😀.
+
+- Your time should be focused on creating something amazing. A project that solves a problem and helps others.
+- You shouldn't be paying for huge sum of money for a theory based course.
+- You shouldn't be building simple ToDo applications that doesnt enhance your learning.
+- You should implement DRY principles to the rest of your life 😀😀😀.
 
 Of course, no one course will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the great minds who have contributed to expanding this project 😎😎!
 
@@ -78,28 +78,26 @@ Of course, no one course will serve all projects since your needs may be differe
 
 <p align="right">(<a href="#top">Back to Top</a>)</p>
 
-
 ### Built With
 
 This section displays or lists all frameworks/libraries used in building project. Links to these libraries/frameworks will be listed below:
 
-* [React.js](https://reactjs.org/)
-* [React Icons](https://react-icons.com/)
-* [React use Sounds](https://use-sounds.com/)
-* [React useQuery](https://react-usequery.com/)
-* [Firebase](https://firebase.com/)
-* [React Router Dom](https://reactrouterdom.com/)
-* [KMenu](https://reactrouterdom.com/)
-* [Fast-Blurhash](https://reactrouterdom.com/)
-* [React-Code-UI](https://reactrouterdom.com/)
+- [React.js](https://reactjs.org/)
+- [React Icons](https://react-icons.com/)
+- [React use Sounds](https://use-sounds.com/)
+- [React useQuery](https://react-usequery.com/)
+- [Firebase](https://firebase.com/)
+- [React Router Dom](https://reactrouterdom.com/)
+- [KMenu](https://reactrouterdom.com/)
+- [Fast-Blurhash](https://reactrouterdom.com/)
+- [React-Code-UI](https://reactrouterdom.com/)
 
 <p align="right">(<a href="#top">Back to Top</a>)</p>
 
-
 <br>
 
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 Before you get started, head over to our project's github repo [Codefun](https://www.github.com/codewitheras/codefun). Fork the repo into your own github account. Clone the forked repo and open the project inside your favourite code editor eg. [Visual Studio Code](https://microsoft.com/visual-studio-code).
@@ -109,17 +107,20 @@ Before you get started, head over to our project's github repo [Codefun](https:/
 ## Prerequisites
 
 Make sure you have installed Git and Nodejs latest version.
-* npm
-<br>
+
+- npm
+  <br>
+
   ```sh
   npm install
   ```
-  <br >
 
-* yarn
-<br>
+    <br >
+
+- yarn
+  <br>
   ```sh
-  yarn
+  yarn install
   ```
 
 ### Installation
@@ -127,28 +128,29 @@ Make sure you have installed Git and Nodejs latest version.
 Below are the steps involved in running the project successful.
 
 1. Git clone the repo [Codefun Repository](https://github.com/)
-<br>
+   <br>
 
 2. Clone the repo
+
    ```sh
    git clone https://github.com/codewitheras/codefun.git
    ```
 
 3. Cd into the cloned project
-    ```
-    cd codefun
-    ```
-3. Install NPM packages
+   ```
+   cd codefun
+   ```
+4. Install NPM packages
    ```sh
-   npm install or yarn
+   npm install or yarn install
    ```
-4. Enter your API in `config.js`
+5. Enter your API in `config.js`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   const API_KEY = "ENTER YOUR API";
    ```
-
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -162,8 +164,6 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 <br>
 
@@ -171,10 +171,10 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-
 <br>
 
 <!-- CONTACT -->
+
 ## Contact
 
 <br>
@@ -182,6 +182,3 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
