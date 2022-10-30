@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { Fragment, useLayoutEffect, useState, useEffect } from 'react';
+import React, { Fragment, useLayoutEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Header } from '../../Exports/exports';
 import styles from './Course.module.css';
@@ -19,10 +19,11 @@ import OneOnOne from '../../assets/miniSvg/one-on-one-mentor-svg.svg';
 import CommunityChat from '../../assets/miniSvg/active-community-svg.svg';
 import MultiDownlaoad from '../../assets/miniSvg/multi-download-svg.svg';
 import { useAuth } from '../../Context/AppContext';
+import userDB from '../../utils/userDB';
 
 const Course = () => {
 	const [hasEnrolled, setHasEnrolled] = useState(false);
-	const [user, setUser] = useState(false);
+	// const [user, setUser] = useState(false);
 	const [course, setCourse] = useState([]);
 	const navigate = useNavigate();
 
@@ -38,9 +39,7 @@ const Course = () => {
 
 	useLayoutEffect(() => {
 		setCourse(selectedCourse[0]);
-	}, [selectedCourse]);
 
-	useEffect(() => {
 		// Adding an automatic scroll to top upon render...
 		const scrollWindow = () => {
 			window.scrollTo({
@@ -53,16 +52,16 @@ const Course = () => {
 		return () => {
 			scrollWindow();
 		};
-	}, []);
+	}, [selectedCourse]);
 
 	// Enroll Course Function...
 	const enrollCourseHandler = () => {
-		if (!hasEnrolled) {
-			if (!user) {
-				navigate('/join-us');
-			} else {
-				setHasEnrolled(true);
-			}
+		if (!currentUser) {
+			navigate('/join-us');
+		}
+
+		if (currentUser && !hasEnrolled) {
+			setHasEnrolled(true);
 		} else {
 			setHasEnrolled(false);
 		}

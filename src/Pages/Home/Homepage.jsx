@@ -1,28 +1,32 @@
-import React from "react";
-import Whyus from "../../Components/Whyus/Whyus";
-import { Header, Banner } from "../../Exports/exports";
-// import styles from "./Homepage.module.css";
+import React from 'react';
+import ComprehensiveProject from '../../Components/ComprensiveProject/ComprehensiveProject';
+import Masterclass from '../../Components/Masterclass/Masterclass';
+import Whyus from '../../Components/Whyus/Whyus';
+import { Header, Banner } from '../../Exports/exports';
 
 const Homepage = () => {
-  return (
-    <>
-      {/* Header */}
-      <Header />
-      {/* Banner */}
-      <Banner />
-      {/* Welcome to Codefun Pro */}
-      <Whyus />
-      {/* Comprehensive Project */}
+	return (
+		<>
+			{/* Header */}
+			<Header />
+			{/* Banner */}
+			<Banner />
+			{/* Welcome to Codefun Pro */}
+			<Whyus />
+			{/* Comprehensive Project */}
+			<ComprehensiveProject />
 
-      {/* Ditch Theory-Driven Courses */}
+			{/* MasterClass Experience */}
+			<Masterclass />
 
-      {/* Our Testimonials */}
-
-      {/* Meet Your Coach */}
-
-      {/* FAQ */}
-    </>
-  );
+			{/* Our Testimonials */}
+			{/* <Testimonials /> */}
+			{/* Meet Your Coach */}
+			{/* <Coach /> */}
+			{/* FAQ */}
+			{/* <Faq /> */}
+		</>
+	);
 };
 
 export default Homepage;

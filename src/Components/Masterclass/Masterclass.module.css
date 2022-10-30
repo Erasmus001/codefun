@@ -1,0 +1,28 @@
+.masterclass {
+	width: 100%;
+	padding: 80px 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.masterclass_intro h3 {
+	font-size: var(--heading-h5);
+	text-transform: uppercase;
+	color: var(--primary-blue);
+}
+
+.masterclass_details {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.masterclass_details h3 {
+	font-size: var(--heading-h2);
+}
