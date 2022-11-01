@@ -28,11 +28,11 @@ const AppRoutes = () => {
           <Route path="/join-us" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/me" element={<UserDashboard />} />
-          <Route path="/me/:userId" element={<UserDashboard />} />
-          <Route path="/me/:userId/courses" element={<UserCourses />} />
-          <Route path="/me/:userId/assignments" element={<UserAssignment />} />
-          <Route path="/me/:userId/events" element={<UserEvents />} />
-          <Route path="/me/:userId/settings" element={<UserSettings />} />
+          {/* <Route path="/me/:userId" element={<UserDashboard />} /> */}
+          <Route path="/:userId/courses" element={<UserCourses />} />
+          <Route path="/:userId/assignments" element={<UserAssignment />} />
+          <Route path="/:userId/events" element={<UserEvents />} />
+          <Route path="/:userId/settings" element={<UserSettings />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

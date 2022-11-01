@@ -15,16 +15,16 @@ const Sidenav = () => {
         <NavLink to={`/me`} style={({ isActive }) =>
           isActive ? activeStyle : undefined
         }>My Profile</NavLink>
-        <NavLink to={`/me/erasmus/courses`} style={({ isActive }) =>
+        <NavLink to={`/erasmus/courses`} style={({ isActive }) =>
           isActive ? activeStyle : undefined
         }>My Courses</NavLink>
-        <NavLink to={`/me/erasmus/assignments`} style={({ isActive }) =>
+        <NavLink to={`/erasmus/assignments`} style={({ isActive }) =>
           isActive ? activeStyle : undefined
         }>My Assignments</NavLink>
-        <NavLink to={`/me/erasmus/events`} style={({ isActive }) =>
+        <NavLink to={`/erasmus/events`} style={({ isActive }) =>
           isActive ? activeStyle : undefined
         }>My Events</NavLink>
-        <NavLink to={`/me/erasmus/settings`} style={({ isActive }) =>
+        <NavLink to={`/erasmus/settings`} style={({ isActive }) =>
           isActive ? activeStyle : undefined
         }>Settings</NavLink>
       </nav>
