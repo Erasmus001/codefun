@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 import logo from "../../assets/png&jpg/logo.png";
 
 const Header = () => {
-  const activestyle = {
+  const activeStyle = {
     color: "#3434FF",
     fontWeight: 600,
   };
@@ -18,23 +18,34 @@ const Header = () => {
       </div>
 
       <nav className={styles.nav}>
-        <NavLink to="/courses" activestyle={activestyle}>
+        <NavLink to="/courses" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
           Courses
         </NavLink>
-        <NavLink to="/projects" activestyle={activestyle}>
+        <NavLink to="/projects" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
           Projects
         </NavLink>
-        <NavLink to="/mentorship" activestyle={activestyle}>
+        <NavLink to="/mentorship" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
           Mentorship
         </NavLink>
-        <NavLink to="/resources" activestyle={activestyle}>
+        <NavLink to="/resources" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
           Rescources
         </NavLink>
-        {/* <NavLink to='/challenges' activestyle={activestyle}>Challenges</NavLink> */}
-        <NavLink to="/contact" activestyle={activestyle}>
+        <NavLink to="/contact" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
           Contact
         </NavLink>
-        <NavLink to="/about" activestyle={activestyle}>
+        <NavLink to="/about" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
           About
         </NavLink>
       </nav>
