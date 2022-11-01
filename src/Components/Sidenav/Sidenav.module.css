@@ -1,0 +1,42 @@
+.sidenav {
+  width: 25%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 60px;
+  box-shadow: 0 0 5px 3px rgba(221, 221, 221, 0.3);
+}
+
+.sidenav_hd {
+  width: 100%;
+  text-align: center;
+}
+
+.sidenav_hd h3 {
+  font-size: 36px;
+}
+
+.nav_links {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.nav_links a {
+  font-size: 18px;
+  line-height: 1.5;
+  color: inherit;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(200, 200, 200, 0.482);
+  border-radius: 5px;
+  /* background-color: dodgerblue; */
+  /* color: white; */
+}

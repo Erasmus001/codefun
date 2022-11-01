@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styles from '../Auth.module.css';
 import logo from '../../../assets/png&jpg/logo.png';
 import Play from '../../../assets/icons/play';
@@ -9,6 +9,9 @@ import User from '../../../assets/icons/user';
 import LockAlt from '../../../assets/icons/lock-alt';
 import { useAuth } from '../../../Context/AppContext';
 
+// React Hot Toast
+import toast from 'react-hot-toast';
+
 const Signup = () => {
 	const [isloading, setIsloading] = React.useState(false);
 	const [ischecked, setIsChecked] = React.useState(false);
@@ -16,8 +19,7 @@ const Signup = () => {
 	const [email, setEmail] = React.useState('');
 	const [password, setPassword] = React.useState('');
 
-	const { registerUser, setCurrentUser } = useAuth();
-	const navigate = useNavigate();
+	const { registerUser } = useAuth();
 
 	const Register = (event) => {
 		event.preventDefault();
@@ -36,12 +38,10 @@ const Signup = () => {
 			setTimeout(() => {
 				// console.log(username, email, password);
 				registerUser(email, password, username);
-				setIsloading(false);
-				setCurrentUser(username);
 
-				navigate('/', {
-					replace: true,
-				});
+				toast.success('Signup Successful')
+
+				setIsloading(false);
 
 				setEmail('');
 				setUsername('');
@@ -171,6 +171,10 @@ const Signup = () => {
 						</button>
 					</div>
 				</form>
+
+				<div className={styles.login_link}>
+					<Link to='/signin'>Login here</Link>
+				</div>
 			</div>
 		</div>
 	);

@@ -1,0 +1,9 @@
+.user_courses {
+  width: 100%;
+  margin-top: 70px;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgb(87, 25, 45);
+}
