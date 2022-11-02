@@ -10,7 +10,7 @@
 
 /* MAIN DASHBOARD */
 .dashboard {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   align-items: flex-start;
@@ -63,17 +63,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   padding: 20px 0;
 }
 
 .user_info {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  gap: 20px;
-  padding: 10px 0;
+  gap: 15px;
+  padding: 7px 0;
   border-bottom: 1px solid rgba(228, 228, 228, 0.291);
 }
 
@@ -85,4 +85,17 @@
 .user_info > p {
   display: flex;
   flex: 1;
+}
+
+.edit_btn {
+  padding: 7px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.edit_btn:hover {
+  background-color: rgba(203, 203, 203, 0.586);
+  border-radius: 50px;
 }

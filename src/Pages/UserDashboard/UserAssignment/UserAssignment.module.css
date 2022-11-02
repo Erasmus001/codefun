@@ -5,5 +5,38 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: palevioletred;
+  background-color: rgba(249, 249, 249, 0.96);
+  /* padding: 40px; */
+}
+
+.user_assignment_content {
+  width: 80%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: scroll;
+}
+
+.user_assignment_content::-webkit-scrollbar {
+  display: none;
+}
+
+.user_assignment_hd {
+  width: 100%;
+}
+
+.user_assignment_hd h3 {
+  font-size: 36px;
+}
+
+.user_assignment_lists {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* border: 1px solid black; */
 }

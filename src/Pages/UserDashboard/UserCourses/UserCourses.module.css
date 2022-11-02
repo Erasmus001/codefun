@@ -5,5 +5,38 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: rgb(87, 25, 45);
+  background-color: rgba(249, 249, 249, 0.96);
+  overflow: hidden;
+}
+
+.user_course_content {
+  width: 80%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: scroll;
+}
+
+.user_course_content::-webkit-scrollbar {
+  display: none;
+}
+
+.user_course_hd {
+  width: 100%;
+}
+
+.user_course_hd h3 {
+  font-size: 36px;
+}
+
+.user_course_lists {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* border: 1px solid black; */
 }

@@ -32,36 +32,36 @@ const UserDashboard = () => {
                   <h4>Account name:</h4>
                   <p>Erasmus Mensah</p>
                   <button className={styles.edit_btn}>
-                    <EditIcon fill='black' height='10' width='10' strokeWidth='4' />
+                    <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
                   </button>
                 </div>
                 <div className={styles.user_info}>
                   <h4>Email:</h4>
-                  <p>Erasmus Mensah</p>
+                  <p>Erasmusmensah00@gmail.com</p>
                   <button className={styles.edit_btn}>
-                    <EditIcon fill='black' height='10' width='10' strokeWidth='4' />
+                    <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
                   </button>
                 </div>
                 <div className={styles.user_info}>
                   <h4>Contact Number:</h4>
-                  <p>Erasmus Mensah</p>
-                  <button className={styles.edit_btn}>
-                    <EditIcon fill='black' height='10' width='10' strokeWidth='4' />
-                  </button>
+                  <p>+233 055 1186 991</p>
+                  {/* <button className={styles.edit_btn}>
+                    <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
+                  </button> */}
                 </div>
                 <div className={styles.user_info}>
                   <h4>Joined Date:</h4>
-                  <p>Erasmus Mensah</p>
-                  <button className={styles.edit_btn}>
-                    <EditIcon fill='black' height='10' width='10' strokeWidth='4' />
-                  </button>
+                  <p>January 20, 2021</p>
+                  {/* <button className={styles.edit_btn}>
+                    <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
+                  </button> */}
                 </div>
                 <div className={styles.user_info}>
                   <h4>Country of Origin:</h4>
-                  <p>Erasmus Mensah</p>
-                  <button className={styles.edit_btn}>
-                    <EditIcon fill='black' height='10' width='10' strokeWidth='4' />
-                  </button>
+                  <p>Ghana</p>
+                  {/* <button className={styles.edit_btn}>
+                    <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
+                  </button> */}
                 </div>
               </div>
             </div>

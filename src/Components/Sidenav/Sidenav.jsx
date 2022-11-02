@@ -4,7 +4,9 @@ import styles from './Sidenav.module.css'
 
 const Sidenav = () => {
   let activeStyle = {
-    color: '#3434FF',
+    // color: '#3434FF',
+    backgroundColor: 'rgba(200, 200, 200, 0.482)',
+    borderRadius: '5px'
   };
   return (
     <div className={styles.sidenav}>
