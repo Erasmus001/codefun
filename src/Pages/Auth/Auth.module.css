@@ -220,6 +220,23 @@
   position: relative;
 }
 
+.google_auth_container {
+  width: 100%;
+  max-width: 90%;
+}
+
+.google_auth {
+  width: 100%;
+  padding: 18px 25px;
+  border-radius: 5px;
+  background-color: red;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.25s linear;
+  position: relative;
+}
+
 .button_txt {
   font-size: 20px;
   color: white;

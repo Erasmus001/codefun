@@ -14,12 +14,13 @@ import toast from 'react-hot-toast';
 
 const Signin = () => {
   const [isloading, setIsloading] = React.useState(false);
+  const [isGoogleloading, setIsGoogleloading] = React.useState(false);
   // const [ischecked, setIsChecked] = React.useState(false);
   // const [username, setUsername] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
-  const { loginUser} = useAuth();
+  const { loginUser } = useAuth();
 
   const Login = (event) => {
     event.preventDefault();
@@ -45,6 +46,10 @@ const Signin = () => {
     }
   };
 
+  const signUpWithGoogle = () => {
+    setIsGoogleloading(true)
+  }
+
   return (
     <div className={styles.auth_page}>
       {/* AUTH FORM */}
@@ -55,7 +60,7 @@ const Signin = () => {
             {/* <h3>learners from around the globe.</h3> */}
           </div>
           <p>
-            Complete your course by continuing from where you left off. 
+            Complete your course by continuing from where you left off.
           </p>
         </div>
 
@@ -99,9 +104,19 @@ const Signin = () => {
           </div>
         </form>
 
+        <div className={styles.google_auth_container}>
+          <button className={`${isGoogleloading && styles.submit__loading
+            } ${styles.google_auth}`}
+            disabled={isGoogleloading && true}
+            onClick={signUpWithGoogle}
+          >
+            <span className={styles.button_txt}>Signin with Google</span>
+          </button>
+        </div>
+
         <div className={styles.login_link}>
-					<Link to='/join-us'>Register here</Link>
-				</div>
+          <Link to='/join-us'>Register here</Link>
+        </div>
       </div>
       <div className={styles.auth_banner}>
         <div className={styles.brand}>
