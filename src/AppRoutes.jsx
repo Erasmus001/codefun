@@ -28,6 +28,8 @@ const AppRoutes = () => {
           <Route path="/join-us" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/me" element={<UserDashboard />} />
+          {/* <Route path="/reset-password" element={<ResetPassword />} /> */}
+          {/* <Route path="/reset-email" element={<ResetEmail />} /> */}
           {/* <Route path="/me/:userId" element={<UserDashboard />} /> */}
           <Route path="/:userId/courses" element={<UserCourses />} />
           <Route path="/:userId/assignments" element={<UserAssignment />} />

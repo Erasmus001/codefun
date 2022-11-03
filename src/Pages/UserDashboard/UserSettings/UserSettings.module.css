@@ -5,5 +5,74 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: violet;
+  /* background-color: violet; */
+}
+
+.settings {
+  width: 80%;
+  height: 100%;
+  background-color: whitesmoke;
+  padding: 50px 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: scroll;
+}
+
+.settings::-webkit-scrollbar {
+  display: none;
+}
+
+.settings_hd {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.settings_hd h3 {
+  font-size: 36px;
+}
+
+.settings_lists {
+  width: 100%;
+  /* border: 2px solid black; */
+  padding: 0 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  line-height: 1.5;
+  /* gap: 20px; */
+}
+
+.settings_list {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid rgba(219, 219, 219, 0.659);
+  color: inherit;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+  padding: 10px 15px;
+}
+
+.settings_list:hover {
+  background-color: rgba(208, 208, 208, 0.365);
+}
+
+.settings_list h4 {
+  font-size: 20px;
+}
+
+.settings_list p {
+  font-size: 16px;
+  color: rgb(68, 68, 68);
+}
+
+.settings_list:last-child {
+  border-bottom: none;
 }

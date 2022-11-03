@@ -44,7 +44,7 @@ const Course = () => {
 		const scrollWindow = () => {
 			window.scrollTo({
 				top: 0,
-				scroll: 'smooth',
+				behavior: 'smooth',
 			});
 		};
 
@@ -61,6 +61,7 @@ const Course = () => {
 		}
 
 		if (currentUser && !hasEnrolled) {
+			
 			setHasEnrolled(true);
 		} else {
 			setHasEnrolled(false);

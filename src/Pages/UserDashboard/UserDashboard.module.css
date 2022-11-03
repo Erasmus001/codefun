@@ -53,11 +53,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 20px 100px;
 }
 
 .user_details_wrapper {
-  /* border: 2px solid black; */
   width: 80%;
   display: flex;
   align-items: center;

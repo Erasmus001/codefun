@@ -39,11 +39,10 @@ const Signup = () => {
 			setTimeout(() => {
 				// console.log(username, email, password);
 				registerUser(email, password, username);
-
 				toast.success('Signup Successful')
-
 				setIsloading(false);
 
+				// Resetting all inputs...
 				setEmail('');
 				setUsername('');
 				setPassword('');

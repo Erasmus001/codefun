@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React, { useLayoutEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import CourseCard from '../../Components/CourseCard/CourseCard';
 import Header from '../../Components/Header/Header';
 import styles from './Courses.module.css';
