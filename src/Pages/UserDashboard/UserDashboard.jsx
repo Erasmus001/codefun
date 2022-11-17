@@ -46,25 +46,27 @@ const UserDashboard = () => {
                 </div>
                 <div className={styles.user_info}>
                   <h4>Email:</h4>
-                  <p>
-                    {
-                      showUpdateForm ? <>
-                        <form autoComplete='on' onSubmit={updateEmail}>
-                          <input type="email"
-                            placeholder='Update email'
-                            required
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)} />
-                        </form>
-                      </> : <>{email}</>
-                    }
-                  </p>
-                  <button className={styles.edit_btn} onClick={openUpdateEmail}>
-                    {
-                      showUpdateForm ?
-                        <button onClick={() => setShowUpdateForm(!showUpdateForm)}>Save</button> : <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
-                    }
-                  </button>
+                  <p>{email}</p>
+                  {
+                    showUpdateForm ? <>
+                      <form autoComplete='on' onSubmit={updateEmail}>
+                        <input type="email"
+                          placeholder='Update email'
+                          required
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)} />
+                      </form>
+                    </> : null
+                  }
+                  {
+                    showUpdateForm ?
+                      <button onClick={() => setShowUpdateForm(!showUpdateForm)}>Save</button> :
+                      <>
+                        <button className={styles.edit_btn} onClick={openUpdateEmail}>
+                          <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
+                        </button>
+                      </>
+                  }
                 </div>
                 <div className={styles.user_info}>
                   <h4>Contact Number:</h4>
