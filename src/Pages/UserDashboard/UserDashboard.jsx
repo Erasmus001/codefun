@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import Sidenav from '../../Components/Sidenav/Sidenav'
 import { Header } from '../../Exports/exports'
 import styles from './UserDashboard.module.css'
@@ -8,6 +8,15 @@ import UserProfile from '../../assets/icons/user'
 import EditIcon from '../../assets/icons/pencil-alt'
 
 const UserDashboard = () => {
+  const [email, setEmail] = useState('erasmusmensah00@gmail.com')
+  const [showUpdateForm, setShowUpdateForm] = useState(false)
+
+  const openUpdateEmail = () => setShowUpdateForm(!showUpdateForm)
+
+  const updateEmail = (event) => {
+    event.preventDefault()
+    setEmail(event.target.value)
+  }
   return (
     <>
       <Header />
@@ -37,9 +46,24 @@ const UserDashboard = () => {
                 </div>
                 <div className={styles.user_info}>
                   <h4>Email:</h4>
-                  <p>Erasmusmensah00@gmail.com</p>
-                  <button className={styles.edit_btn}>
-                    <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
+                  <p>
+                    {
+                      showUpdateForm ? <>
+                        <form autoComplete='on' onSubmit={updateEmail}>
+                          <input type="email"
+                            placeholder='Update email'
+                            required
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)} />
+                        </form>
+                      </> : <>{email}</>
+                    }
+                  </p>
+                  <button className={styles.edit_btn} onClick={openUpdateEmail}>
+                    {
+                      showUpdateForm ?
+                        <button onClick={() => setShowUpdateForm(!showUpdateForm)}>Save</button> : <EditIcon fill='black' height='20' width='20' strokeWidth='4' className={styles.icon} />
+                    }
                   </button>
                 </div>
                 <div className={styles.user_info}>

@@ -21,28 +21,37 @@ const AppContextProvider = ({ children }) => {
       password,
       email,
     };
-    if (!email) {
-      toast.error("Sorry, Please enter your email");
-    } else if (!password) {
-      toast.error("Sorry, Please enter a secure password");
-    } else if (!username) {
-      toast.error("Soory, Please enter your username");
-    } else {
-      userDB.push(...userDB, {
-        id: Math.floor(Math.random() * 100000),
-        username,
-        email,
-        password,
-      });
+    // if (!email) {
+    //   toast.error("Sorry, Please enter your email");
+    // } else if (!password) {
+    //   toast.error("Sorry, Please enter a secure password");
+    // } else if (!username) {
+    //   toast.error("Soory, Please enter your username");
+    // } else {
+    userDB.push({
+      id: Math.floor(Math.random() * 100000),
+      username,
+      email,
+      password,
+    });
 
-      // Set currentUser to registered user...
-      setCurrentUser(user);
+    // Set currentUser to registered user...
+    setCurrentUser(user);
 
-      localStorage.setItem("userDB", JSON.stringify(userDB));
-    }
+    localStorage.setItem("userDB", JSON.stringify(userDB));
+    // }
   };
 
-  const loginUser = (email, password) => {};
+  const loginUser = (email, password) => {
+    const users = JSON.parse(localStorage.getItem("userDB"));
+
+    const currentUser = users?.find(
+      (email, password) =>
+        email !== users.email && password !== users.password
+    );
+
+    console.log(`Current user => `, currentUser);
+  };
 
   const values = {
     loginUser,

@@ -141,7 +141,7 @@
 
 .auth_hd p {
   max-width: 480px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.4;
   font-weight: 500;
   color: rgba(23, 23, 23, 0.904);
@@ -152,7 +152,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 15px;
+  gap: 13px;
   flex: 1;
   /* border: 1px solid black; */
   width: 100%;
@@ -161,7 +161,7 @@
 
 .form_input {
   width: 100%;
-  border: 2px solid rgba(165, 165, 165, 0.674);
+  border: 2px solid rgba(191, 191, 191, 0.674);
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -182,7 +182,11 @@
   color: rgb(78, 77, 77);
 }
 
-.form_input input:focus .form_input {
+/* .form_input input:focus {
+  outline: 2px solid var(--primary-blue);
+} */
+
+.form_input input:focus > .form_input {
   border: 2px solid red;
 }
 
@@ -210,7 +214,7 @@
 
 .submit .button {
   width: 100%;
-  padding: 18px 25px;
+  padding: 17px 25px;
   border-radius: 5px;
   background-color: var(--primary-blue);
   border: 0;
@@ -223,11 +227,12 @@
 .google_auth_container {
   width: 100%;
   max-width: 90%;
+  margin-top: -20px;
 }
 
 .google_auth {
   width: 100%;
-  padding: 18px 25px;
+  padding: 17px 25px;
   border-radius: 5px;
   background-color: red;
   border: 0;
@@ -238,13 +243,13 @@
 }
 
 .button_txt {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   transition: all 0.2s;
 }
 
 .submit .submit__loading {
-  cursor: wait;
+  cursor: not-allowed;
 }
 
 .submit__loading .button_txt {

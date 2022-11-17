@@ -26,23 +26,23 @@ const Signin = () => {
     event.preventDefault();
 
     if (!email) {
-      alert('Please enter your email');
+      toast.error('Please enter your email')
       return;
     } else if (!password) {
-      alert('Please enter a strong password');
+      toast.error('Please enter a strong password')
+      return;
     } else {
       setIsloading(true);
+
       setTimeout(() => {
-        // console.log(username, email, password);
         loginUser(email, password);
 
         toast.success(`Welcome, ${email}`)
-
         setIsloading(false);
 
         setEmail('');
         setPassword('');
-      }, 5000);
+      }, 2000);
     }
   };
 
@@ -60,7 +60,10 @@ const Signin = () => {
             {/* <h3>learners from around the globe.</h3> */}
           </div>
           <p>
-            Complete your course by continuing from where you left off.
+            Complete learning by continuining from where you left off.
+            Master the languages of the web: HTML, CSS and JavaScript.This path
+						will prepare you to build basic websites and build interactive
+						web applications.
           </p>
         </div>
 
@@ -133,14 +136,14 @@ const Signin = () => {
             <h1>For free.</h1>
           </div>
 
-          <div className={styles.demo_vid}>
+          {/* <div className={styles.demo_vid}>
             <button>
               <div className={styles.playIcon}>
                 <Play fill='white' height='16' width='16' />
               </div>
               <span>Watch Demo</span>
             </button>
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.bottom_nav}>

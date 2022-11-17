@@ -5,7 +5,7 @@ import styles from '../Auth.module.css';
 import logo from '../../../assets/png&jpg/logo.png';
 import Play from '../../../assets/icons/play';
 import Envelope from '../../../assets/icons/envelope';
-import User from '../../../assets/icons/user';
+// import User from '../../../assets/icons/user';
 import LockAlt from '../../../assets/icons/lock-alt';
 import { useAuth } from '../../../Context/AppContext';
 
@@ -15,8 +15,8 @@ import toast from 'react-hot-toast';
 const Signup = () => {
 	const [isloading, setIsloading] = React.useState(false);
 	const [isGoogleloading, setIsGoogleloading] = React.useState(false);
-	const [ischecked, setIsChecked] = React.useState(false);
-	const [username, setUsername] = React.useState('');
+	// const [ischecked, setIsChecked] = React.useState(false);
+	// const [username, setUsername] = React.useState('');
 	const [email, setEmail] = React.useState('');
 	const [password, setPassword] = React.useState('');
 
@@ -25,28 +25,29 @@ const Signup = () => {
 	const Register = (event) => {
 		event.preventDefault();
 
-		if (!username) {
-			alert('Please enter your username');
-			return;
-		} else if (!email) {
-			alert('Please enter your email');
+		// * User form Validation...
+		if (!email) {
+			// ! If no email is given...
+			toast.error('Please enter your email')
 		} else if (!password) {
-			alert('Please enter a strong password');
-		} else if (!ischecked) {
-			alert('Please agree to our Terms of Use');
+			// ! If no password is given...
+			toast.error('Please enter a strong password')
+			return;
 		} else {
+			// * On Success...
 			setIsloading(true);
+
 			setTimeout(() => {
 				// console.log(username, email, password);
-				registerUser(email, password, username);
+				registerUser(email, password);
 				toast.success('Signup Successful')
 				setIsloading(false);
 
 				// Resetting all inputs...
 				setEmail('');
-				setUsername('');
+				// setUsername('');
 				setPassword('');
-				setIsChecked(false);
+				// setIsChecked(false);
 			}, 5000);
 		}
 	};
@@ -72,14 +73,14 @@ const Signup = () => {
 						<h1>For free.</h1>
 					</div>
 
-					<div className={styles.demo_vid}>
+					{/* <div className={styles.demo_vid}>
 						<button>
 							<div className={styles.playIcon}>
 								<Play fill='white' height='16' width='16' />
 							</div>
 							<span>Watch Demo</span>
 						</button>
-					</div>
+					</div> */}
 				</div>
 
 				<div className={styles.bottom_nav}>
@@ -97,19 +98,19 @@ const Signup = () => {
 			<div className={styles.auth_form}>
 				<div className={styles.auth_hd}>
 					<div className={styles.h3s}>
-						<h3>Join over 1,000 thousand</h3>
-						<h3>learners from around the globe.</h3>
+						<h3>Join over 100+</h3>
+						<h3>learners around the globe.</h3>
 					</div>
 					<p>
-						Master the languages of the web: HTML, CSS and JavaScript. This path
-						will prepare you to build basic websites and then build interactive
+						Master the languages of the web Html, Css and Javascript.This path
+						will prepare you to build basic websites and build interactive
 						web applications.
 					</p>
 				</div>
 
 				{/* Form */}
 				<form className={styles.form} autoComplete='on' onSubmit={Register}>
-					<div className={styles.form_input}>
+					{/* <div className={styles.form_input}>
 						<User fill='black' height='20' width='20' title='user' />
 						<input
 							type='text'
@@ -120,7 +121,7 @@ const Signup = () => {
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}
 						/>
-					</div>
+					</div> */}
 					<div className={styles.form_input}>
 						<Envelope fill='black' height='20' width='20' title='email' />
 						<input
@@ -146,7 +147,7 @@ const Signup = () => {
 						/>
 					</div>
 
-					<div className={styles.terms_and_conds}>
+					{/* <div className={styles.terms_and_conds}>
 						<input
 							type='checkbox'
 							name='agree'
@@ -158,17 +159,17 @@ const Signup = () => {
 						<label htmlFor='agree'>
 							<p>
 								Agree to all terms and conditions in
-								<Link to='/terms'>Terms of Use</Link>
+								<Link to='/terms' style={{ color: 'dodgerblue', textDecoration: 'underline' }}> Terms of Use</Link>
 							</p>
 						</label>
-					</div>
+					</div> */}
 
 					<div className={styles.submit}>
 						<button
 							type='submit'
-							className={`${styles.button}  ${isloading && styles.submit__loading
+							className={`${styles.button} ${isloading && styles.submit__loading
 								}`}
-							disabled={(isloading || !username || !email || !password) && true}
+							disabled={(isloading || !email || !password) && true}
 						>
 							<span className={styles.button_txt}>Join us</span>
 						</button>
@@ -185,7 +186,12 @@ const Signup = () => {
 				</div>
 
 				<div className={styles.login_link}>
-					<Link to='/signin'>Login here</Link>
+					<p>Already have an account?
+						<Link to='/signin'
+							style={{ color: 'inherit', fontSize: '16px' }}>
+							 Login here
+						</Link>
+					</p>
 				</div>
 			</div>
 		</div>

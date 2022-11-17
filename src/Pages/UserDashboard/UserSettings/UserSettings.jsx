@@ -24,7 +24,8 @@ const UserSettings = () => {
             </div>
             <div className={styles.settings_list}>
               <h4>Support</h4>
-              <p>Raise tickets regarding any issue here on the platform</p>
+              <p>Raise tickets regarding any issue here on the platform.
+              </p>
             </div>
             <Link to={`/reset-password`} className={styles.settings_list}>
               <h4>Reset Your Password</h4>
